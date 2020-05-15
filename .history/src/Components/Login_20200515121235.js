@@ -27,7 +27,8 @@ class Login extends React.Component {
                 localStorage.setItem('_internalSettings', PlayFab._internalSettings.sessionTicket)
                 localStorage.setItem('_internalSettings_entityToken', PlayFab._internalSettings.entityToken)
 
-                console.log(PlayFabClient);
+                localStorage.setItem('client_internalSettings', PlayFabClient._internalSettings.sessionTicket)
+                localStorage.setItem('client_internalSettings_entityToken', PlayFabClient._internalSettings.entityToken)
             } else if( error !== null ) {
                 console.log(error);
             }

@@ -78,13 +78,10 @@ class Game extends React.Component {
             }
         }, () => {
             if(this.getMyTotal() == 21) {
-                // alert("You won!");
-                this.finish_game();
+                alert("You won!");
             } else if(this.getMyTotal() > 21) {
-                // alert("Dealer won!");
-                this.finish_game();
+                alert("Dealer won!");
             }
-
         });
     }
 
@@ -102,8 +99,6 @@ class Game extends React.Component {
         }
 
         var winner = this.calculate_winner()
-        console.log("Winner: ")
-        console.log(winner);
 
         PlayFab._internalSettings.sessionTicket = localStorage.getItem('_internalSettings');
         PlayFab._internalSettings.entityToken = localStorage.getItem('_internalSettings_entityToken');
@@ -130,7 +125,8 @@ class Game extends React.Component {
 
             alert("You won!");
 
-        } else {
+        }
+        if( winner == "Dealer" ) {
 
             var subtract_loss_money = {
                 // SessionTicket: localStorage.getItem('SessionTicket'),
@@ -191,20 +187,6 @@ class Game extends React.Component {
     calculate_winner = () => {
         var my_total = this.getMyTotal();
         var dealer_total = this.getDealerTotal();
-
-        if( my_total == 21) {
-            return "Me"
-        } else if( my_total > 21) {
-            return "Dealer"
-        } else if( dealer_total > 21) {
-            return "Me"
-        } else if( dealer_total == 21 ) {
-            return "Dealer"
-        } 
-
-        // So the bug wasn't in PlayFab, the issue was that finish_game() was only getting called
-        // if you hit stay. So if you lost by going over or if you won by hitting 21 exactly, the finish_game
-        // and the distribution of rewards will never hit.
 
         console.log(my_total);
         console.log(dealer_total);

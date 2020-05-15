@@ -200,11 +200,7 @@ class Game extends React.Component {
             return "Me"
         } else if( dealer_total == 21 ) {
             return "Dealer"
-        } 
-
-        // So the bug wasn't in PlayFab, the issue was that finish_game() was only getting called
-        // if you hit stay. So if you lost by going over or if you won by hitting 21 exactly, the finish_game
-        // and the distribution of rewards will never hit.
+        }
 
         console.log(my_total);
         console.log(dealer_total);

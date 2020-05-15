@@ -23,8 +23,8 @@ class Store extends React.Component {
         PlayFab._internalSettings.sessionTicket = localStorage.getItem('_internalSettings')
         PlayFab._internalSettings.entityToken = localStorage.getItem('_internalSettings_entityToken')
 
-        // PlayFabClient._internalSettings.sessionTicket = localStorage.getItem('client_internalSettings');
-        // PlayFabClient._internalSettings.entityToken = localStorage.getItem('client_internalSettings_entityToken');
+        PlayFabClient._internalSettings.sessionTicket = localStorage.getItem('client_internalSettings')
+        PlayFabClient._internalSettings.entityToken = localStorage.getItem('client_internalSettings_entityToken')
 
         var character_request = {
             // SessionTicket: localStorage.getItem('SessionTicket')
