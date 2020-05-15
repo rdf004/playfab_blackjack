@@ -4,7 +4,6 @@ import './Style/style.css';
 import App from './Components/App';
 import Login from './Components/Login';
 import Signup from './Components/Signup';
-import Game from './Components/Game';
 import Store from './Components/Store';
 import * as serviceWorker from './serviceWorker';
 import {
@@ -17,11 +16,9 @@ import {
 ReactDOM.render(
   <Router>
     <Switch>
-      <Route exact path = "/" component = {App} />
-      <Route exact path = "/login" component = {App} />
-      <Route exact path="/signup" component = {Signup} />
-      <Route exact path="/game" component = {Game} />
-      <Route exact path="/store" component = {Store} />
+      <Route path = "/" component = {App} />
+      <Route path = "login" component = {Login} />
+      <Route path="signup" component = {Signup} />
     </Switch>
   </Router>,
   document.getElementById('root')

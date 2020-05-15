@@ -17,11 +17,10 @@ import {
 ReactDOM.render(
   <Router>
     <Switch>
-      <Route exact path = "/" component = {App} />
-      <Route exact path = "/login" component = {App} />
-      <Route exact path="/signup" component = {Signup} />
-      <Route exact path="/game" component = {Game} />
-      <Route exact path="/store" component = {Store} />
+      <Route path = "/" component = {App} />
+      <Route path = "/login" component = {Login} />
+      <Route path="/signup" component = {Signup} />
+      <Route path="/game" component = {Game} />
     </Switch>
   </Router>,
   document.getElementById('root')

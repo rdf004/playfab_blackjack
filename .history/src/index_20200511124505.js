@@ -19,9 +19,8 @@ ReactDOM.render(
     <Switch>
       <Route exact path = "/" component = {App} />
       <Route exact path = "/login" component = {App} />
-      <Route exact path="/signup" component = {Signup} />
+      <Route exact path="/signup" component = {App} />
       <Route exact path="/game" component = {Game} />
-      <Route exact path="/store" component = {Store} />
     </Switch>
   </Router>,
   document.getElementById('root')

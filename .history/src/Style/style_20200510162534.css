@@ -1,0 +1,103 @@
+/* SIGNUP */
+
+.signup-div {
+    background-color: #2D2D2D;
+    width: 50vw;
+    height: 70vh;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 0% auto;
+    margin: auto;
+    margin-top: 50px;
+
+    border-radius: 10px;
+}
+
+/* STORE */
+
+.buy-button {
+    margin: 20px auto;
+}
+
+.store-div {
+    background-color: #2D2D2D;
+    width: 50vw;
+    height: 25vh;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 0% auto;
+    margin: auto;
+    margin-top: 50px;
+
+    border-radius: 10px;
+}
+
+/* LOGIN */
+
+.login-div {
+    background-color: #2D2D2D;
+    width: 50vw;
+    height: 40vh;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 0% auto;
+    margin: auto;
+    margin-top: 50px;
+
+    border-radius: 10px;
+}
+
+.form-div {
+    margin-top: 50px;
+}
+
+.login-form {
+    margin: auto;
+}
+
+.login-item {
+    margin: auto;
+    color: white;
+}
+
+.login-button {
+    margin: 20px auto;
+    background-color: white;
+    color: black;
+}
+
+.login-input {
+    border-radius: 5px;
+}
+
+.login-field {
+    margin: 5px;
+    font-size: 14pt;
+}
+
+.login-title {
+    color: white;
+    font-size: 2rem;
+}
+
+
+html, body { 
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    overflow: auto;
+}
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+* {
+    font-family: "San Francisco";
+}
